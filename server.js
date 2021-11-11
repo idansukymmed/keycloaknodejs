@@ -18,15 +18,15 @@ app.use(cookieParser());
 
 const kcAdminClient = new KcAdminClient({
   baseUrl: "http://localhost:8080/auth",
-  realmName: "master",
+  realmName: "demo",
 });
 
 let execute = async function () {
   await kcAdminClient.auth({
-    username: "kymmed",
+    username: "demmyk",
     password: "Asdfasdf123",
     grantType: "password",
-    clientId: "nodejs-admin-client",
+    clientId: "nodejs-admin-client-demo",
     totp: "123456", // optional Time-based One-time Password if OTP is required in authentication flow
   });
 

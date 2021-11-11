@@ -9,7 +9,7 @@ module.exports = function (app) {
     })
   );
   app.use(
-    "/master",
+    "/demo",
     createProxyMiddleware({
       target: "http://192.168.1.9:8080",
       changeOrigin: true,
